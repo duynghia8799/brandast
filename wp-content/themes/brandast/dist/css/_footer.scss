@@ -1,0 +1,106 @@
+footer {
+  #footer {
+    #license {
+      padding: 0 0 20px 0;
+      text-align: left;
+      margin-top: 170px;
+      font: 500 15px/1.5 "Muli";
+    }
+    padding: 30px 0;
+    .footer-logo{
+      width: 130px;
+      height: 130px;
+      display: flex;
+      margin: 15px auto 0 auto;
+      .logo-footer{
+        display: block;
+        &-nightmode{
+          display: none;
+        }
+      }
+    }
+    .footer-item {
+      .item {
+        &__title {
+          font: 700 24px/1.6 "PlayfairDisplay";
+          letter-spacing: 0.5px;
+          margin: 20px 0;
+          position: relative;
+
+          //&:after {
+          //  content: '';
+          //  position: absolute;
+          //  bottom: 0;
+          //  left: 0;
+          //  width: 30px;
+          //  height: 2px;
+          //  background: $orange;
+          //}
+        }
+
+        &__content {
+          font: 400 20px/1.6 "Muli";
+
+          a {
+            color: #000;
+            &:hover {
+              color: $orange;
+            }
+          }
+          .footer-socialnetwork{
+            display: flex;
+            li{
+              width: 100%;
+              a{
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+    .main-form {
+      input, select, textarea {
+            height: 40px;
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #707070;
+            font: 300 20px/1.5 "Muli";
+            margin-bottom: 40px;
+            color: rgba(255, 255, 255, 0.8);
+            //resize: none;
+            @include placeholder {
+              font: 300 20px/1.5 "Muli";
+              color: #000;
+            }
+
+            &[type='submit'] {
+              padding: 0 20px;
+              color: #fff;
+              display: flex;
+              margin-right: auto;
+              width: auto;
+              font: 500 22px/1.5 "Muli";
+              position: relative;
+              border: 1px solid #dc0000;
+              cursor: pointer;
+              border-radius: 10px;
+              background: #dc0000;
+            }
+      }
+      select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: '';
+            background: url("../images/icon/arrow-down.png") no-repeat center right;
+            background-size: 15px auto;
+      }
+    }
+
+    &.active {
+      display: block;
+    }
+  }
+}

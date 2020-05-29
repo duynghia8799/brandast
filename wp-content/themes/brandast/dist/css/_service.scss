@@ -1,0 +1,150 @@
+#service-page {
+
+  #group-new {
+    padding: 50px 50px;
+    margin-bottom: 50px;
+    .title {
+      color: $black;
+      font: 700 45px/1.5 "PlayfairDisplay";
+      padding: 0 50px 50px 0;
+      position: relative;
+    }
+  }
+  #group-1 {
+    padding: 80px 0;
+
+    .group-1-left {
+      padding: 0 150px;
+      position: relative;
+
+      .subtitle {
+        font: 400 32px/1.5 "Muli";
+      }
+
+      .list-title-group-1 {
+        padding-left: 0;
+        overflow: hidden;
+        height: 110px;
+        position: relative;
+
+        .title {
+          font: 700 100px/120px "PlayfairDisplay";
+          color: $black;
+          text-transform: uppercase;
+          display: block;
+          text-align: right;
+
+        }
+
+        .swiper-slide-shadow-bottom, .swiper-slide-shadow-top, .swiper-cube-shadow {
+          display: none !important;
+        }
+
+
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 20%;
+        height:5px;
+        background: $orange;
+        bottom: -15px;
+        right: 150px;
+      }
+    }
+
+    .group-1-right {
+    &-content{
+      font: 400 20px/1.5 "Muli";
+      margin-top: 65px;
+    }
+    }
+  }
+
+  .section-layout {
+    overflow: hidden;
+    .box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: row;
+      margin: 200px auto;
+      width: calc(100% - 300px);
+      align-content: center;
+
+      &-content {
+        width: 42%;
+        padding: 0 0 0 100px;
+        position: relative;
+        &-main{
+          position: absolute;
+          top: 50%;
+          left: auto;
+          @include translate(0,-50%);
+          .number{
+            display: block;
+            font: 300 20px/1.5 "Muli";
+            color: $gray;
+          }
+          // font: 400 20px/1.5 "BrandonText";
+          color: $black;
+          h3 {
+            font: 700 24px/1.5 "PlayfairDisplay";
+          }
+          ul{
+            li{
+              a{
+                color: $black;
+                display: block;
+                position: relative;
+                font: 400 24px/1.5 "Muli";
+                &:before{
+                  content: "";
+                  height: 20px;
+                  width: 25px;
+                  background: url(../images/icon/arrow-long-right.png) no-repeat;
+                  background-size: 100% auto;
+                  position: absolute;
+                  top: 10px;
+                  left: -40px;
+                  display: none;
+                }
+                &:hover{
+                  color: $orange;
+                  &:before{
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+
+        }
+      }
+
+      &-image {
+        width: 58%;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+    }
+    &:nth-child(2n){
+      .box{
+        &-image{
+          order: 2;
+        }
+        &-content{
+          order: 1;
+        }
+      }
+
+    }
+
+  }
+
+}

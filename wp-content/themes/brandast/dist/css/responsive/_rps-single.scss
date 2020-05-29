@@ -1,0 +1,608 @@
+@media only screen and (max-width: 1601px) {
+  .single-layout {
+    .post_content {
+      padding: 0 150px;
+
+      img.full-width-layout {
+        width: calc(100% + 300px);
+        margin: 10px -150px !important;
+      }
+    }
+  }
+  #single-service {
+    #group-1 .group-1-left .title{
+      font-size: 45px;
+    }
+    #group-6 .group-6-right .item__content {
+      padding-right: 0;
+      font: 500 40px/1.2 "BrandonText";
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1441px) {
+  #single-service {
+    #group-1 .group-1-left .title{
+      font-size: 40px;
+    }
+    #group-5 .container-item .list-item .item {
+      font-size: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1367px) {
+  .single-layout {
+    h1.post_title {
+      font: 700 40px/1.2 "BrandonText";
+    }
+
+    .post_content {
+      padding: 0 100px;
+
+      img.full-width-layout {
+        width: calc(100% + 200px);
+        margin: 10px -100px !important;
+      }
+    }
+  }
+  #single-service {
+    .service-group-layout {
+      padding: 50px 0 50px 50px;
+
+      .title-service {
+        font-size: 45px;
+      }
+    }
+
+    #group-5 .container-item .list-item .item {
+      font-size: 20px;
+    }
+
+    #group-6 .group-6-right .item__content {
+      font: 500 35px/1.2 "BrandonText";
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1281px) {
+  #single-service {
+    .service-group-layout {
+      .title-service {
+        font: 500 45px/1.1 "BrandonText";
+      }
+    }
+
+    #group-1 {
+      .col-lg-4, .col-lg-8 {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
+
+      .group-1-left {
+        padding: 0 0 50px 0;
+
+        .title {
+          margin-bottom: 0;
+        }
+
+        .content {
+          margin: 30px 0 20px 0;
+        }
+
+        .readmore {
+          position: static;
+        }
+      }
+    }
+
+    #group-3 {
+      .list-item .item__title {
+        max-width: 100%;
+      }
+    }
+
+    #group-4 .group-4-image {
+      max-width: 100%;
+    }
+
+    #group-5 .container-item .list-item {
+      width: calc(100% - 25px);
+      left: 25px;
+
+      .item {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+
+  .single-layout {
+    h1.post_title {
+      font: 700 35px/1.2 "BrandonText";
+    }
+
+    .post_content {
+      padding: 0 50px;
+
+      img.full-width-layout {
+        width: calc(100% + 100px);
+        margin: 10px -50px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .single-layout {
+    .post_sub {
+      .box_item {
+        .title {
+          font: 500 20px/1.5 "BrandonText";
+        }
+
+        .content {
+          ul {
+            li {
+              margin: 0 5px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+
+    .post_navigation {
+      .nav_item {
+        a {
+          font: 500 16px/1.5 "BrandonText";
+        }
+
+      }
+    }
+
+    .post_related {
+      .list_item {
+        .item {
+          margin-bottom: 30px;
+
+          &__cat {
+            a {
+              font-size: 14px;
+            }
+          }
+
+          &__content {
+            &__title {
+              font: 500 18px/1.5 "BrandonText";
+            }
+          }
+        }
+      }
+    }
+  }
+  #single-project {
+    .post_content {
+      .layer_content_static {
+        display: block;
+        margin: 0;
+
+        .col-left {
+          display: block;
+
+          &-content {
+            margin: 20px 0;
+
+            h3, h4 {
+              text-align: center;
+            }
+
+            h3 {
+              font-size: 45px;
+              margin-left: 0;
+
+              &:after {
+                left: 50%;
+                @include translate(-50%, 0)
+              }
+            }
+          }
+        }
+
+        .col-right {
+          margin-top: 10px;
+        }
+
+      }
+    }
+
+    .post_related .list_item {
+      .item {
+        height: 300px;
+
+        .item__content__title {
+          font: 700 25px/1.5 "BrandonText";
+        }
+
+        .item__content__sector {
+          a {
+            font-size: 18px;
+          }
+        }
+
+        .item__content__scope {
+          display: none;
+        }
+      }
+    }
+
+
+  }
+  #single-service {
+    .service-group-layout {
+      padding: 50px 0;
+
+    }
+
+    #group-1 {
+      .group-1-right .slider-group-1 .item__pic {
+        height: 500px;
+      }
+    }
+
+    #group-2 {
+      .group-2-right {
+        margin-top: 30px;
+      }
+    }
+
+    #group-3 {
+      .list-item .item__title {
+        max-width: 100%;
+      }
+    }
+
+    #group-4 {
+      .group-4-right {
+        margin-top: 30px;
+      }
+    }
+
+    #group-7 {
+      .group-7-right {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .single-layout {
+    .category-title {
+      a {
+        font: 300 14px/1.5 "BrandonText";
+      }
+    }
+
+    time {
+      font: italic 300 16px/1.5 "BrandonText"
+    }
+
+    h1.post_title {
+      font: 700 28px/1.2 "BrandonText";
+    }
+
+    .post_content {
+      font-size: 16px;
+      padding: 0;
+
+      img.full-width-layout {
+        width: 100%;
+        margin: 10px 0 !important;
+      }
+
+      h2 {
+        font-size: 25px;
+      }
+
+      h3 {
+        font-size: 23px;
+
+      }
+
+      h4 {
+        font-size: 20px;
+      }
+    }
+
+    .post_sub {
+      .box_item {
+        width: 50%;
+
+        .title {
+          font: 500 20px/1.5 "BrandonText";
+        }
+
+        .content {
+          ul {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+              width: 50%;
+              margin: 0;
+              font-size: 16px;
+
+              a {
+                font-size: 16px;
+              }
+            }
+          }
+
+        }
+
+        &.box_share {
+          .content {
+            ul {
+              margin-left: auto;
+              max-width: 50%;
+            }
+          }
+        }
+      }
+    }
+
+    .post_navigation {
+      .nav_item {
+        a {
+          font: 500 16px/1.5 "BrandonText";
+
+          .link {
+            display: none;
+          }
+        }
+
+      }
+    }
+
+    .post_related {
+      .list_item {
+        .item {
+          margin-bottom: 30px;
+
+          &__cat {
+            a {
+              font-size: 14px;
+            }
+          }
+
+          &__content {
+            &__title {
+              font: 500 18px/1.5 "BrandonText";
+            }
+          }
+        }
+      }
+    }
+  }
+  #single-project {
+
+    .post_scope {
+      ul {
+        margin: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+          padding: 3px 0;
+          display: block;
+          width: 50%;
+
+          a {
+            display: block;
+            text-align: center;
+            font: 400 13px/1.4 "BrandonText";
+          }
+        }
+      }
+    }
+
+    .post_banner {
+      &_content {
+        h1 {
+          font-size: 30px;
+          width: 100vw;
+          display: block;
+          text-align: center;
+          padding: 0 15px;
+
+          img {
+            max-width: 70%;
+            height: auto;
+            display: table;
+            margin: 0 auto;
+          }
+        }
+      }
+
+      &_pic {
+        height: 300px;
+
+        > img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .post_related {
+      .list_item {
+        .item {
+          height: 300px;
+
+          &__content {
+            &__title {
+              font-size: 30px;
+            }
+
+            &__sector {
+              font-size: 16px;
+            }
+
+            &__scope {
+              ul {
+                li {
+                  a {
+                    font-size: 13px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #single-service {
+    .service-group-layout {
+      padding: 30px 0;
+
+      .title-service {
+        font: 500 33px/1.1 "BrandonText";
+      }
+    }
+
+    #group-1 {
+      .group-1-left .content {
+        font-size: 20px;
+      }
+
+      .group-1-right .slider-group-1 .item__pic {
+        height: 300px;
+
+      }
+    }
+
+    #group-2 {
+      .group-2-right ul {
+        li {
+          > span {
+            &.title {
+              font: 500 22px/1.2 "BrandonText";
+              .number{
+                min-width: 50px;
+              }
+            }
+
+            &.content {
+              padding: 0;
+              font: 400 16px/1.5 "BrandonText";
+            }
+          }
+
+          &.active {
+            > span {
+              &.content {
+                max-height: 100%;
+              }
+            }
+          }
+        }
+      }
+
+
+    }
+
+    #group-3 {
+
+    }
+
+    #group-4 {
+      .group-4-right .content {
+        font-size: 20px;
+      }
+    }
+
+    #group-5 .container-item {
+      margin-top: 30px;
+
+      .image {
+        display: none;
+      }
+
+      .list-item {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        position: static;
+        align-items: center;
+        @include translate(0, 0);
+
+        .item {
+          width: auto;
+          font: 500 25px/1.5 "BrandonText";
+
+          &:after {
+            content: '\f105';
+            padding: 0 10px;
+            font-size: 30px;
+            font-family: "FontAwesome";
+          }
+
+          &:last-child {
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    #group-6 .group-6-right {
+      .item__content {
+        font: 500 24px/1.3 "BrandonText";
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .readmore {
+        text-align: center;
+      }
+    }
+
+    #group-7 {
+      .group-7-right {
+        ul {
+          li {
+            > span {
+              &.title {
+                font: 500 24px/1.2 "BrandonText";
+              }
+
+
+            }
+
+            ul.content {
+              padding: 0 50px;
+              font: 400 16px/1.5 "BrandonText";
+            }
+
+          }
+
+        }
+
+        h3 {
+          font-size: 24px;
+        }
+      }
+
+    }
+  }
+}

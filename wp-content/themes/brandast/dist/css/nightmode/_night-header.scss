@@ -1,0 +1,47 @@
+header {
+  #header {
+    .header-col-left {
+      .header-logo {
+        display: none;
+        &-nightmode{
+          display: block;
+          &:after{
+            background: $black;
+          }
+        }
+      }
+    }
+    &.sticky{
+      background: $black;
+    }
+
+    .header-col-right {
+      .header-submenu {
+        ul {
+          li {
+            a {
+              color: $white;
+              &:hover{
+                color: $orange;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .fixed-text {
+    color: white;
+  }
+
+  .fixed-socialnetwork {
+    ul {
+      li {
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}

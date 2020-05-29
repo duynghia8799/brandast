@@ -1,0 +1,1053 @@
+header {
+  #header {
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: center;
+    @extend .transition;
+    height: 100px;
+    top:-100px;
+
+    .header-col-left {
+      .header-logo {
+        position: fixed;
+        top: 30px;
+        left: 50px;
+        display: block;
+        height: 35px;
+        z-index: 0;
+        width: 200px;
+        background-size: 180px 35px;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        @extend .transition;
+
+        &.logged {
+          top: 60px;
+        }
+
+        &-nightmode{
+          display: none;
+        }
+      }
+
+      &.sticky {
+        .header-logo {
+         width: 35px;
+        }
+
+      }
+    }
+
+    .header-col-right {
+      margin-left: auto;
+
+      .header-submenu {
+        ul {
+          display: flex;
+          align-items: baseline;
+
+          li {
+            padding: 0 10px;
+            &:nth-last-child(2) {
+              color: #fff;
+              background: #ec1414;
+              border-radius: 6px;
+              padding-left: 10px;
+              padding-right: 10px;
+            }
+              &:hover {
+                color: #fff;
+              }
+            a {
+              color: $gray;
+              font-size: 15px;
+              font-weight: 500;
+              line-height: 30px;
+              display: block;
+
+              &:hover {
+                color: $orange;
+              }
+
+              &.slc-lang {
+                font-size: 16px;
+                font-weight: 400;
+                padding-left: 20px;
+              }
+            }
+            &:last-child{
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+    &.sticky{
+      background: #fff;
+      position: fixed;
+      width: 100%;
+      right: 100px;
+      z-index: 3;
+      top: 0;
+      &.logged{
+        top: 32px;
+      }
+    }
+
+  }
+
+  #button-mainmenu {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    cursor: pointer;
+
+    &.logged {
+      top: 36px;
+    }
+
+    img {
+      width: 30px;
+      height: auto;
+    }
+  }
+
+  .fixed-text {
+    color: $gray;
+    letter-spacing: 1.5px;
+    position: fixed;
+    left: 50px;
+    top: 50%;
+    font-size: 16px;
+    font-weight: 400;
+    transform-origin: 0 0;
+    @include rotate(270);
+    z-index: 99;
+
+    //&:after {
+    //  content: "";
+    //  position: absolute;
+    //  width: 30px;
+    //  height: 2px;
+    //  background: #EF4123;
+    //  bottom: 0;
+    //  left: 0;
+    //}
+  }
+
+  .fixed-socialnetwork {
+    position: fixed;
+    left: 50px;
+    bottom: 100px;
+
+    ul {
+      li {
+        padding: 3px 0;
+
+        a {
+          color: $gray;
+          font-size: 120%;
+
+          &:hover {
+            color: $orange;
+          }
+        }
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -100px;
+      left: 7px;
+      height: 80px;
+      width: 1px;
+      background: #919191;
+    }
+  }
+
+  #header-mainmenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    @extend .transition;
+
+    &.active {
+      opacity: 1;
+      visibility: inherit;
+    }
+
+    .fixed-text {
+      display: block;
+      color: $white;
+
+      //&:after {
+      //  background: $white;
+      //}
+    }
+
+    .fixed-socialnetwork {
+      display: block;
+      z-index: 99;
+
+      ul {
+        li {
+          a {
+            color: $white;
+          }
+        }
+      }
+
+      &:after {
+        background: $white;
+      }
+    }
+
+    .fixed-contact {
+      position: fixed;
+      right: 50px;
+      bottom: 100px;
+      z-index: 101;
+      width: 60vw;
+
+      .item {
+        width: 100%;
+        display: flex;
+
+        &__title {
+          width: 100%;
+          color: $white;
+          font: 500 20px/1.5 "BrandonText";
+        }
+
+        &__content {
+          width: 100%;
+          color: $white;
+          font: 400 18px/1.5 "BrandonText";
+
+          a {
+            color: $white;
+          }
+
+          &:last-child {
+            display: block;
+          }
+        }
+      }
+    }
+
+    #btn-close-mainmenu {
+      cursor: pointer;
+      position: fixed;
+      top: 30px;
+      right: 50px;
+      z-index: 105;
+      width: 32px;
+      height: 32px;
+
+      &:before, &:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 2px;
+        background-color: $white;
+      }
+
+      &:before {
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+      }
+
+
+    }
+
+    .header-logo {
+      color: $white;
+      display: block;
+      position: fixed;
+      top: 30px;
+      left: 50px;
+      height: 35px;
+      letter-spacing: 0.3px;
+      z-index: 99;
+      img{
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    #mainmenu-col-left {
+      width: 30vw;
+      min-width: 500px;
+      height: 100vh;
+      position: fixed;
+      background: $black;
+      top: 0;
+      left: 0;
+      z-index: 98;
+
+      ul#menu-main-menu {
+        position: absolute;
+        top: 30%;
+        left: 250px;
+        width: calc(100% - 250px);
+        @include translate(0, -30%);
+
+        > li {
+          margin-bottom: 20px;
+          display: block;
+          position: relative;
+          width: 100%;
+
+          > a {
+            font: 700 45px/1.4 "PlayfairDisplay";
+            color: $white;
+            position: relative;
+            padding-bottom: 10px;
+
+            &:after {
+              content: '';
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              width: 50px;
+              height: 4px;
+              background: $orange;
+              display: none;
+            }
+          }
+
+          > ul.sub-menu {
+            width: max-content;
+            position: absolute;
+            top: 100px;
+            left: calc(100% + 50px);
+            z-index: 99;
+            opacity: 0;
+            visibility: hidden;
+
+            @extend .transition;
+
+            &:before {
+              content: '';
+              position: absolute;
+              top: 10px;
+              left: -160px;
+              width: 150px;
+              height: 3px;
+              background: $white;
+            }
+
+            > li {
+              > a {
+                font: 400 30px/1.2 "BrandonText";
+                color: $white;
+                position: relative;
+                padding-bottom: 10px;
+                display: block;
+
+                &:hover {
+                  color: $orange;
+                }
+              }
+            }
+          }
+
+          &.active {
+            > a {
+              &:after {
+                display: block;
+              }
+            }
+
+            > ul.sub-menu {
+              top: 20px;
+              opacity: 1;
+              visibility: inherit;
+            }
+          }
+
+
+        }
+      }
+    }
+
+    #mainmenu-col-right {
+      width: 70vw;
+      max-width: calc(100vw - 500px);
+      height: 100vh;
+      position: fixed;
+      background-color: $black;
+      background-size: cover;
+      top: 0;
+      right: 0;
+      z-index: 2;
+      background-image: url(../images/background/bg-menu-1.jpg);
+      @extend .transition;
+
+      &.background2 {
+        background-image: url(../images/background/bg-menu-2.jpg);
+      }
+
+      &.background3 {
+        background-image: url(../images/background/bg-menu-3.jpg);
+      }
+
+      &.background4 {
+        background-image: url(../images/background/bg-menu-4.jpg);
+      }
+
+      #form-contact-header {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 150px 140px 80px 140px;
+        color: $white;
+
+        .header-form {
+          overflow: hidden;
+          margin-bottom: 40px;
+
+          h3 {
+            font: 500 46px/1.3 "BrandonText";
+          }
+
+          h4 {
+            font: 300 20px/1.3 "BrandonText";
+          }
+        }
+
+        .main-form {
+          input, select, textarea {
+            height: 40px;
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #707070;
+            font: 300 20px/1.5 "BrandonText";
+            margin-bottom: 40px;
+            color: rgba(255, 255, 255, 0.8);
+            //resize: none;
+            @include placeholder {
+              font: 300 20px/1.5 "BrandonText";
+              color: rgba(255, 255, 255, 0.8);
+            }
+
+            &[type='submit'] {
+              border: none;
+              display: flex;
+              margin-left: auto;
+              width: auto;
+              font: 500 22px/1.5 "BrandonText";
+              position: relative;
+              border-bottom: 3px solid $orange;
+              cursor: pointer;
+            }
+
+            option {
+              margin: 40px;
+              background: rgba(0, 0, 0, 0.8);
+              color: rgba(255, 255, 255, 0.8);
+              font: 300 20px/1.5 "BrandonText";
+              //text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+            }
+          }
+
+          select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: '';
+            background: url("../images/icon/arrow-down.png") no-repeat center right;
+            background-size: 15px auto;
+          }
+        }
+
+        &.active {
+          display: block;
+        }
+
+      }
+
+    }
+
+    &.logged {
+      .header-logo {
+        top: 60px;
+      }
+
+      #btn-close-mainmenu {
+        top: 60px;
+      }
+    }
+  }
+
+  #header-contact {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/background/bg-page-contact.jpg) no-repeat;
+    background-size: cover;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    @extend .transition;
+
+    &.active {
+      opacity: 1;
+      visibility: inherit;
+    }
+
+    .fixed-text {
+      display: block;
+      color: $white;
+
+      //&:after {
+      //  background: $white;
+      //}
+    }
+
+    .fixed-socialnetwork {
+      display: block;
+      z-index: 99;
+
+      ul {
+        li {
+          a {
+            color: $white;
+          }
+        }
+      }
+
+      &:after {
+        background: $white;
+      }
+    }
+
+    .fixed-contact {
+      position: fixed;
+      right: 50px;
+      bottom: 100px;
+      z-index: 101;
+      width: 60vw;
+
+      .item {
+        width: 100%;
+        display: flex;
+
+        &__title {
+          width: 100%;
+          color: $white;
+          font: 500 20px/1.5 "PlayfairDisplay";
+        }
+
+        &__content {
+          width: 100%;
+          color: $white;
+          font: 400 18px/1.5 "Muli";
+
+          a {
+            color: $white;
+          }
+
+          &:last-child {
+            display: none;
+          }
+        }
+      }
+    }
+
+    #btn-close-contact {
+      cursor: pointer;
+      position: fixed;
+      top: 30px;
+      right: 50px;
+      z-index: 105;
+      width: 32px;
+      height: 32px;
+
+      &:before, &:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 2px;
+        background-color: $white;
+      }
+
+      &:before {
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+      }
+
+
+    }
+
+    .header-logo {
+      color: $white;
+      display: block;
+      position: fixed;
+      top: 30px;
+      height: 35px;
+      left: 50px;
+      letter-spacing: 0.3px;
+      z-index: 99;
+      img{
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    #contact-col-left {
+      width: 30vw;
+      min-width: 500px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 98;
+
+      h3.page-title {
+        position: absolute;
+        top: 170px;
+        left: 250px;
+        width: calc(100% - 250px);
+        @include translate(0, -30%);
+        font: 700 45px/1.4 "BrandonText";
+        color: $white;
+
+        &:after {
+          content: "";
+          position: absolute;
+          right: -70px;
+          bottom: 20px;
+          width: 200px;
+          height: 3px;
+          background: $white;
+        }
+      }
+    }
+
+    #contact-col-right {
+      width: 70vw;
+      max-width: calc(100vw - 500px);
+      height: 100vh;
+      position: fixed;
+      background-size: cover;
+      top: 0;
+      right: 0;
+      z-index: 2;
+      @extend .transition;
+
+
+      #form-contact-header-2 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 150px 140px 80px 140px;
+        color: $white;
+
+        .header-form {
+          overflow: hidden;
+          margin-bottom: 40px;
+
+          h3 {
+            font: 500 46px/1.3 "BrandonText";
+          }
+
+          h4 {
+            font: 300 20px/1.3 "BrandonText";
+          }
+        }
+
+        .main-form {
+          input, select, textarea {
+            height: 40px;
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid $gray;
+            font: 300 20px/1.5 "BrandonText";
+            margin-bottom: 40px;
+            color: rgba(255, 255, 255, 0.8);
+            //resize: none;
+            @include placeholder {
+              font: 300 20px/1.5 "BrandonText";
+              color: rgba(255, 255, 255, 0.8);
+            }
+
+            &[type='submit'] {
+              border: none;
+              display: flex;
+              margin-left: auto;
+              width: auto;
+              font: 500 22px/1.5 "Muli";
+              position: relative;
+              border-bottom: 3px solid $orange;
+              cursor: pointer;
+            }
+
+            option {
+              margin: 40px;
+              background: rgba(0, 0, 0, 0.8);
+              color: rgba(255, 255, 255, 0.8);
+              font: 300 20px/1.5 "BrandonText";
+              //text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+            }
+          }
+        }
+
+      }
+
+    }
+
+    &.logged {
+
+      .header-logo {
+        top: 60px;
+      }
+
+      #btn-close-contact {
+        top: 62px;
+      }
+    }
+  }
+
+
+  /*Responsive Header*/
+  #button-mainmenu-responsive {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+
+    &.logged {
+      top: 60px;
+    }
+
+    img {
+      width: 30px;
+      height: auto;
+    }
+  }
+
+  #header-mainmenu-responsive {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 1);
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    @extend .transition;
+
+    &.active {
+      opacity: 1;
+      visibility: inherit;
+    }
+
+
+    #btn-close-mainmenu-responsive {
+      cursor: pointer;
+      position: fixed;
+      top: 30px;
+      right: 15px;
+      z-index: 105;
+      width: 32px;
+      height: 32px;
+
+      &:before, &:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 2px;
+        background-color: $white;
+      }
+
+      &:before {
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+      }
+
+
+    }
+
+    .header-logo {
+      top: 30px;
+      left: 15px;
+      display: block;
+      height: 30px;
+      position: fixed;
+      img{
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    ul#menu-responsive-menu {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      width: 100%;
+      @include translate(-50%, -50%);
+
+      > li {
+        margin-bottom: 0;
+        display: block;
+        position: relative;
+        width: 100%;
+
+        > a {
+          font: 700 45px/1.4 "BrandonText";
+          color: $white;
+          position: relative;
+          padding-bottom: 10px;
+          display: table;
+          margin: 0 auto;
+
+          &:after {
+            content: '';
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            background: $orange;
+            display: none;
+          }
+        }
+
+        &.active {
+          > a {
+            &:after {
+              display: block;
+            }
+          }
+
+          > ul.sub-menu {
+            top: 20px;
+            opacity: 1;
+            visibility: inherit;
+          }
+        }
+
+
+      }
+    }
+
+    &.logged {
+      .header-logo {
+        top: 60px;
+      }
+
+      #btn-close-mainmenu {
+        top: 60px;
+      }
+    }
+
+
+  }
+
+  .responsive-socialnetwork {
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    @include translate(-50%, 0);
+    width: 100%;
+
+    ul {
+      width: 80%;
+      display: table;
+      margin: 0 auto;
+
+      li {
+        display: table-cell;
+        width: 20%;
+
+        a {
+          color: $white;
+          font-size: 28px;
+          text-align: center;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .language-menu-responsive {
+    position: fixed;
+    top: 40px;
+    right: 80px;
+
+    * {
+      color: $white;
+      font-size: 20px;
+    }
+  }
+
+  //Responsive Contact
+  #header-contact-responsive {
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 30px;
+    background: $black;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+
+    &.active {
+      opacity: 1;
+      visibility: inherit;
+    }
+
+    .header-logo {
+      top: 30px;
+      left: 15px;
+      display: block;
+      height: 30px;
+      position: absolute;
+      img{
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    #form-contact-header-responsive {
+      padding: 100px 40px 20px 40px;
+      color: $white;
+
+      .header-form {
+        overflow: hidden;
+        margin-bottom: 20px;
+
+        h3 {
+          font: 500 35px/1.3 "BrandonText";
+        }
+
+        h4 {
+          font: 300 16px/1.3 "BrandonText";
+        }
+      }
+
+      .main-form {
+        padding: 0;
+
+        input, select, textarea {
+          height: 30px;
+          width: 100%;
+          background: transparent;
+          border: none;
+          border-bottom: 1px solid $gray;
+          font: 300 16px/1.5 "BrandonText";
+          margin-bottom: 20px;
+          color: rgba(255, 255, 255, 1);
+          //resize: none;
+          @include placeholder {
+            font: 300 16px/1.5 "BrandonText";
+            color: rgba(255, 255, 255, 1);
+          }
+
+          &[type='submit'] {
+            border: none;
+            display: flex;
+            margin-left: auto;
+            width: auto;
+            font: 500 22px/1.2 "BrandonText";
+            position: relative;
+            border-bottom: 3px solid $orange;
+            cursor: pointer;
+            margin-bottom: 0;
+          }
+
+        }
+      }
+    }
+
+    #btn-close-contact-responsive {
+      cursor: pointer;
+      position: absolute;
+      top: 30px;
+      right: 15px;
+      z-index: 105;
+      width: 32px;
+      height: 32px;
+
+      &:before, &:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 2px;
+        background-color: $white;
+      }
+
+      &:before {
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+      }
+
+
+    }
+
+    .contact-responsive {
+      padding: 20px 40px;
+
+      * {
+        color: $white;
+        font: 400 15px/1.6 "BrandonText";
+      }
+
+      .item {
+        &__title {
+          font: 700 20px/1.6 "BrandonText";
+          order: 2;
+          display: block;
+        }
+
+        &__content {
+          &:last-child {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .responsive-socialnetwork {
+      margin-top: -20px;
+      position: static;
+      width: 100%;
+      @include translate(0, 0);
+    }
+  }
+}

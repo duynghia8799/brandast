@@ -1,0 +1,25 @@
+#tpl-archive {
+  #group-project-top {
+    .group-top-left .list-title-project-top .title {
+      color: $white;
+      span{
+        color: $white;
+      }
+    }
+
+    .group-top-right-navigation .project-term a {
+      color: $white;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+
+
+  .load-more {
+    &:before, &:after {
+      background: $white;
+    }
+  }
+}

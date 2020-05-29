@@ -1,0 +1,120 @@
+//Start Import Style
+@import 'common/font/fontface';
+@import 'mixin';
+@import 'common';
+//End Import Style
+
+
+body {
+  font: 400 14px/1.5 "BrandonText", Arial, sans-serif;;
+  color: $black;
+  background: $white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+
+  &.no-scroll{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    header {
+      .fixed-text {
+        display: none;
+      }
+
+      .fixed-socialnetwork {
+        display: none;
+      }
+
+      #header {
+        .header-col-left {
+          .header-logo {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &.logged{
+      top: 32px
+    }
+
+  }
+  &::-webkit-scrollbar-track
+  {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+  }
+
+  &::-webkit-scrollbar
+  {
+    width: 6px;
+    background-color: #F5F5F5;
+  }
+
+  &::-webkit-scrollbar-thumb
+  {
+    background-color: #000000;
+  }
+}
+
+#wrapper-master {
+  padding: 0 100px;
+}
+
+// Start Inc Header
+@import "header";
+// End Inc Geader
+
+// Start Inc Footer
+@import "footer";
+// End Inc Footer
+
+// Start Inc Homepage
+@import "homepage";
+// End Inc Homepage
+
+// Start Inc ServicePage
+@import "service";
+// End Inc ServicePage
+
+// Start Inc AboutPage
+@import "about";
+// End Inc AboutPage
+
+// Start Inc CategoryPage
+@import "category";
+// End Inc CategoryPage
+
+// Start Inc CategoryPage
+@import "single";
+// End Inc CategoryPage
+
+
+// Start Inc PorjectPage
+@import "project";
+// End Inc PorjectPage
+
+// Start Inc 404Page
+@import "page-error";
+// End Inc 404Page
+
+// Start Inc ThankyouPage
+@import "page-thankyou";
+// End Inc 404Page
+
+
+// Start Inc Responsive
+@import "./responsive/responsive";
+// End Inc Responsive
+
+
+//Start Inc NightMode
+@import "./nightmode/nightmode";
+//End Inc NightMode
+

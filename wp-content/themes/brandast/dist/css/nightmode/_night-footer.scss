@@ -1,0 +1,19 @@
+footer {
+  #footer {
+    .footer-logo {
+      .logo-footer{
+        display: none;
+        &-nightmode{
+          display: block;
+        }
+      }
+
+    }
+    .footer-item .item__content a{
+      color: $white;
+      &:hover{
+        color: $orange;
+      }
+    }
+  }
+}

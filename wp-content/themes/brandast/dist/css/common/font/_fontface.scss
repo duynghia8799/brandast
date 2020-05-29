@@ -1,0 +1,168 @@
+
+@mixin font-face($name, $path, $weight, $style) {
+
+    @font-face {
+        font-family: '#{$name}';
+        font-style: $style;
+        font-weight: $weight;
+        src: url('common/font/#{$path}.ttf');
+    }
+}
+
+/*--------------Include Font Family Roboto---------------------------*/
+@include font-face(Roboto, Roboto/Roboto-Light ,300, normal );
+@include font-face(Roboto, Roboto/Roboto-LightItalic ,300, italic );
+
+@include font-face(Roboto, Roboto/Roboto-Regular ,400, normal );
+@include font-face(Roboto, Roboto/Roboto-Italic ,400, italic );
+
+@include font-face(Roboto, Roboto/Roboto-Medium ,400, normal );
+@include font-face(Roboto, Roboto/Roboto-MediumItalic ,500, italic );
+
+@include font-face(Roboto, Roboto/Roboto-Bold ,700, normal );
+@include font-face(Roboto, Roboto/Roboto-BoldItalic ,700, italic );
+
+@include font-face(Roboto, Roboto/Roboto-Black ,900, normal );
+@include font-face(Roboto, Roboto/Roboto-BlackItalic ,900, italic );
+
+/*--------------Include Font Family Muli---------------------------*/
+@include font-face(Muli, Muli/Muli-Light ,300, normal );
+@include font-face(Muli, Muli/Muli-LightItalic ,300, italic );
+
+@include font-face(Muli, Muli/Muli-Regular ,500, normal );
+@include font-face(Muli, Muli/Muli-Italic ,400, italic );
+
+@include font-face(Muli, Muli/Muli-Medium ,500, normal );
+@include font-face(Muli, Muli/Muli-MediumItalic ,500, italic );
+
+@include font-face(Muli, Muli/Muli-Bold ,700, normal );
+@include font-face(Muli, Muli/Muli-BoldItalic ,700, italic );
+
+@include font-face(Muli, Muli/Muli-Black ,900, normal );
+@include font-face(Muli, Muli/Muli-BlackItalic ,900, italic );
+
+/*--------------Include Font Family Muli---------------------------*/
+@include font-face(Muli, Muli/Muli-Light ,300, normal );
+@include font-face(Muli, Muli/Muli-LightItalic ,300, italic );
+
+@include font-face(Muli, Muli/Muli-Regular ,400, normal );
+@include font-face(Muli, Muli/Muli-Italic ,400, italic );
+
+@include font-face(Muli, Muli/Muli-Medium ,500, normal );
+@include font-face(Muli, Muli/Muli-MediumItalic ,500, italic );
+
+@include font-face(Muli, Muli/Muli-Bold ,700, normal );
+@include font-face(Muli, Muli/Muli-BoldItalic ,700, italic );
+
+@include font-face(Muli, Muli/Muli-Black ,900, normal );
+@include font-face(Muli, Muli/Muli-BlackItalic ,900, italic );
+
+/*--------------Include Font Family PlayfairDisplay---------------------------*/
+@include font-face(PlayfairDisplay, PlayfairDisplay/PlayfairDisplay-Light ,300, normal );
+@include font-face(PlayfairDisplay, PlayfairDisplay/PlayfairDisplay-LightItalic ,300, italic );
+
+@include font-face(PlayfairDisplay, PlayfairDisplay/PlayfairDisplay-Regular ,400, normal );
+@include font-face(PlayfairDisplay, PlayfairDisplay/PlayfairDisplay-Italic ,400, italic );
+
+@include font-face(PlayfairDisplay, PlayfairDisplay/PlayfairDisplay-Medium ,500, normal );
+@include font-face(PlayfairDisplay, PlayfairDisplay/PlayfairDisplay-MediumItalic ,500, italic );
+
+@include font-face(PlayfairDisplay, PlayfairDisplay/PlayfairDisplay-Bold ,700, normal );
+@include font-face(PlayfairDisplay, PlayfairDisplay/PlayfairDisplay-BoldItalic ,700, italic );
+
+@include font-face(PlayfairDisplay, PlayfairDisplay/PlayfairDisplay-Black ,900, normal );
+@include font-face(PlayfairDisplay, PlayfairDisplay/PlayfairDisplay-BlackItalic ,900, italic );
+
+/*--------------Include Font Family Brandon Text---------------------------*/
+
+
+
+@include font-face(BrandonText, BrandonText/BrandonText-Thin ,200, normal );
+@include font-face(BrandonText, BrandonText/BrandonText-ThinItalic ,200, italic );
+
+@include font-face(BrandonText, BrandonText/BrandonText-Light ,300, normal );
+@include font-face(BrandonText, BrandonText/BrandonText-LightItalic ,300, italic );
+
+//@include font-face(BrandonText, BrandonText/BrandonText-Regular ,400, normal );
+//@include font-face(BrandonText, BrandonText/BrandonText-Italic ,400, italic );
+
+@include font-face(BrandonText, BrandonText/BrandonText-Medium ,500, normal );
+@include font-face(BrandonText, BrandonText/BrandonText-MediumItalic ,500, italic );
+
+@include font-face(BrandonText, BrandonText/BrandonText-Bold ,700, normal );
+@include font-face(BrandonText, BrandonText/BrandonText-BoldItalic ,700, italic );
+
+//@include font-face(BrandonText, BrandonText/BrandonText-Black ,900, normal );
+@include font-face(BrandonText, BrandonText/BrandonText-BlackItalic ,900, italic );
+
+
+@font-face {
+    font-family: 'BrandonText';
+    font-style: normal;
+    font-weight: 900;
+    src: url('common/font/BrandonText/BrandonText-Black.otf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+    font-family: 'BrandonText';
+    font-style: italic;
+    font-weight: 400;
+    src: url('common/font/BrandonText/BrandonText-Italic.otf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+    font-family: 'BrandonText';
+    font-style: normal;
+    font-weight: 400;
+    src: url('common/font/BrandonText/BrandonText-Regular.otf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+    font-family: 'Butler';
+    font-style: normal;
+    font-weight: 600;
+    src: url('common/font/Butler/ButlerBold.otf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+    font-family: 'Butler';
+    font-style: normal;
+    font-weight: 400;
+    src: url('common/font/Butler/ButlerMedium.otf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 900;
+  src: url("common/font/Muli/Muli-Black.ttf"); }
+
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: url("common/font/Muli/Muli-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Muli';
+  font-style: italic;
+  font-weight: 400;
+  src: url("common/font/Muli/Muli-Italic.ttf"); }
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  font-style: italic;
+  font-weight: 400;
+  src: url("common/font/PlayfairDisplay/PlayfairDisplay-Italic.ttf"); }
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  font-style: normal;
+  font-weight: 900;
+  src: url("common/font/PlayfairDisplay/PlayfairDisplay-Black.ttf"); }
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  font-style: normal;
+  font-weight: 400;
+  src: url("common/font/PlayfairDisplay/PlayfairDisplay-Regular.ttf"); }  

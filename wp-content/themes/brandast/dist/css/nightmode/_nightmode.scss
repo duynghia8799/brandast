@@ -1,0 +1,50 @@
+body{
+
+  &.nightmode-theme{
+    color: $white;
+    background: $black;
+    .readmore{
+      &:hover{
+        color: $white
+      }
+    }
+    .tpl-page h1, #tpl-archive h1{
+      color: $white;
+    }
+
+    // Start Include Header
+    @import "night-header";
+    // End Include Header
+
+    // Start Include Footer
+    @import "night-footer";
+    // End Include Footer
+
+    // Start Include Homepage
+    @import "night-homepage";
+    // End Include Homepage
+
+    // Start Include AboutPage
+    @import "night-about";
+    // End Include AboutPage
+
+    // Start Include ServicePage
+    @import "night-service";
+    // End Include ServicePage
+
+    // Start Include BlogPage
+    @import "night-blog";
+    // End Include BlogPage
+
+    // Start Include ProjectPage
+    @import "night-project";
+    // End Include ProjectPage
+
+    // Start Include SinglePost
+    @import "night-single";
+    // End Include SinglePost
+
+  }
+
+
+}

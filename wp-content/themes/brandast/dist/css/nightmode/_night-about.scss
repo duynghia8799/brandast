@@ -1,0 +1,49 @@
+#about-page {
+  #group-1 .group-1-left .list-title-group-1 .title {
+    color: $white;
+  }
+
+  #group-2 .item__pic img {
+    @include filter(grayscale(200%) opacity(1) brightness(100))
+  }
+
+  #group-3 .album-gr-3 .item-slider {
+    color: $black;
+    background: $white;
+  }
+
+  #group-4 {
+    .image-gr-4 {
+      img {
+        @include filter(invert(100%))
+
+      }
+    }
+
+    .section__step {
+      .step {
+        &:after{
+          background: $white;
+        }
+      }
+      &:after{
+        background: $white;
+        background: linear-gradient(90deg, $white 50%, $black 50%),
+        linear-gradient(90deg, $white 50%, $black 50%),
+        linear-gradient(0deg, $white 50%, $black 50%),
+        linear-gradient(0deg, $white 50%, $black 50%);
+        background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+        background-size: 15px 2px, 15px 2px, 2px 15px, 2px 15px;
+        background-position: 0 0, 200px 100px, 0 100px, 200px 0;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 860px){
+  #about-page #group-3 .album-gr-3 .item-slider-content{
+    background: $white;
+  }
+
+}

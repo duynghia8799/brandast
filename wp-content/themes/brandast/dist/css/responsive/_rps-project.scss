@@ -1,0 +1,231 @@
+@media only screen and (max-width: 1601px) {
+  #tpl-archive {
+    #group-project-top {
+      .group-top {
+        &-left {
+          padding: 0 50px 0 150px;
+          .list-title-project-top {
+            .title {
+             span{
+               font: 700 80px/110px "BrandonText";
+             }
+            }
+          }
+
+          &:after {
+            right: 50px;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1441px) {
+  #tpl-archive {
+    #group-project-top {
+      .group-top {
+        &-left {
+          .list-title-project-top {
+            height: 100px;
+            .title {
+              span{
+                font: 700 70px/90px "BrandonText";
+              }
+            }
+          }
+          &:after {
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1367px) {
+  #tpl-archive {
+    #group-project-top {
+      .group-top {
+        &-left {
+          padding: 0 50px;
+
+          .list-title-project-top {
+            .title {
+              span{
+                font: 700 70px/90px "BrandonText";
+              }
+            }
+          }
+
+          &:after {
+            right: 50px;
+          }
+        }
+      }
+    }
+
+    #group-project-main {
+      .list-project {
+        .grid-item {
+          .item {
+            &__content {
+              &__title {
+                font: 700 35px/1.2 "BrandonText";
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1281px) {
+
+}
+
+@media only screen and (max-width: 1100px) {
+  #tpl-archive {
+    #group-project-top {
+      .group-top {
+        &-left {
+
+          .list-title-project-top {
+            height: 75px;
+
+            .title {
+              span{
+                font: 700 55px/65px "BrandonText";
+              }
+            }
+          }
+
+          &:after {
+            right: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  #tpl-archive {
+    #group-project-top {
+      padding-bottom: 0;
+
+      .group-top {
+        &-left {
+          .subtitle {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    #group-project-main {
+      .list-project {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+        grid-gap: 0;
+
+        .grid-item {
+          height: 300px;
+          width: 50%;
+          padding: 15px;
+          .item {
+            &__content {
+              &__title {
+                font: 700 35px/1.2 "BrandonText";
+              }
+            }
+          }
+        }
+
+        &.page-lasttype {
+          &-1 {
+            max-height: 100%;
+          }
+
+          &-2 {
+            max-height: 100%;
+          }
+
+          &-3 {
+            max-height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  #tpl-archive {
+    #group-project-top {
+      padding-bottom: 0;
+
+      .group-top {
+        &-left {
+          padding: 0;
+
+          .subtitle {
+            text-align: left;
+          }
+
+          &:after {
+            right: 0;
+          }
+        }
+
+        &-right {
+          &-content {
+            font: 400 20px/25px "BrandonText";
+          }
+
+          &-navigation {
+            .project-term {
+              .title {
+                font: 700 25px/1.5 "BrandonText"
+              }
+
+              .content {
+                li {
+                  a {
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    #group-project-main {
+      .list-project {
+        margin: 0 ;
+        .grid-item {
+          height: 300px;
+          width: 100%;
+          margin:0 0 15px 0;
+          padding: 0;
+
+          .item {
+            &__content {
+              &__title {
+                font: 700 35px/1.2 "BrandonText";
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

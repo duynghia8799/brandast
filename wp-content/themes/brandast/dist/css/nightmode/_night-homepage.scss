@@ -1,0 +1,79 @@
+#homepage {
+  #group-1 {
+    .group-1-left {
+
+      .subtitle {
+        color: $white;
+      }
+
+      .title {
+        color: $white;
+      }
+    }
+  }
+
+  #group-2 {
+    .group-2-top-left {
+      .list-title-group-2 {
+        .title {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  #group-3 {
+    .group-3-left {
+      .subtitle {
+        color: $white;
+      }
+
+      ul {
+        li {
+          .title {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .group-3-right {
+      .faq-group-3 {
+        ul {
+          li{
+            > span {
+              &.question, &.answer {
+                color: $white;
+                .number {
+                  color: $white;
+                }
+                &:after {
+                  @include filter(grayscale(1) brightness(100));
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #group-4 {
+    .group-4-left {
+      .title {
+        color: $white;
+      }
+    }
+
+    .group-4-right {
+      .slider-group-4 {
+        .swiper-slide {
+          img {
+            @include filter(grayscale(1) opacity(1) brightness(100)) ;
+          }
+        }
+      }
+    }
+  }
+}

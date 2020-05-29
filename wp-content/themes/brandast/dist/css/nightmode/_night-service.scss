@@ -1,0 +1,24 @@
+#service-page{
+  #group-1 {
+    .group-1-left .list-title-group-1 .title{color: $white}
+    .group-1-right .list-title-group-1 ul li{
+      color: $white;
+      span{
+        color: $white;
+      }
+    }
+  }
+  .section-layout .box-content-main{
+   color: $white;
+    .number{
+      color: $white;
+    }
+    ul li a{
+      color: $white;
+      &:hover{
+        color: $orange;
+      }
+    }
+  }
+
+}

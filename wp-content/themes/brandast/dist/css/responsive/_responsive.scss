@@ -1,0 +1,53 @@
+//Responsive
+@media only screen and (max-width: 860px) {
+  #navigation-toc{
+    right: 20px;
+  }
+  #wrapper-master{
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  #wrapper-master{
+    padding: 0 15px;
+  }
+  #navigation-toc{
+    display: none;
+  }
+  .readmore{
+    margin-top: 15px;
+  }
+}
+//Start Inc Responsive Header
+@import "rps-header";
+//End Inc Responsive Header
+
+// Start Inc Responsive Footer
+@import "rps-footer";
+//End Inc Responsive Footer
+
+// Start Inc Responsive HomePage
+@import "rps-homepage";
+//End Inc Responsive HomePage
+
+// Start Inc Responsive AboutPage
+@import "rps-about";
+//End Inc Responsive AboutPage
+
+// Start Inc Responsive AboutPage
+@import "rps-service";
+//End Inc Responsive AboutPage
+
+// Start Inc Responsive BlogPage
+@import "rps-blog";
+//End Inc Responsive BlogPage
+
+// Start Inc Responsive ProjectPage
+@import "rps-project";
+//End Inc Responsive ProjectPage
+
+// Start Inc Responsive SinglePost
+@import "rps-single";
+//End Inc Responsive SinglePost
+

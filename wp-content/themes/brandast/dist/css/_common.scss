@@ -1,0 +1,298 @@
+$bluemain: #006886;
+$bluelight: #00b0e0;
+$blue: #006ce5;
+$bluebold: #294f9d ;
+$black: #000;
+$gray: #707070;
+$yellow: #fcae18;
+$orange: #EF4123;
+$green: #19b4b2;
+$greenlight: #00d130;
+$red: #c81e00;
+$white: #fff;
+
+.text-overflow {
+  display: block;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+*[disabled]{
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  opacity: .5;
+}
+* {
+  outline: none !important;
+  text-decoration: none !important;
+  box-sizing: border-box;
+
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.transition {
+  transition: all 0.3s !important;
+  -o-transition: all 0.3s !important;
+  -ms-transition: all 0.3s !important;
+  -webkit-transition: all 0.3s !important;
+  -moz-transition: all 0.3s !important;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.cb {
+  clear: both;
+}
+
+.imgson {
+  height: 100%;
+  width: 100%;
+  object-fit: cover
+}
+
+label{
+  color: #333;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+img{
+  max-width: 100%;
+  height: auto
+}
+* {
+  @include placeholder {
+    font-size: 85%;
+    color: #a0a0a0;
+    font-weight: 400;
+  }
+}
+
+
+#navigation-toc {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+
+  ul {
+    li {
+      display: block;
+      margin-bottom: 10px;
+      a {
+        width: 8px;
+        height: 8px;
+        background: rgba(112, 112, 112, 0.5);
+        border-radius: 50%;
+        display: block;
+      }
+      &.active{
+        a{
+          background: rgba(112, 112, 112, 1);
+        }
+
+      }
+    }
+  }
+}
+
+a{
+  color: $orange;
+  &:hover {
+    color: #AF311D;
+    text-decoration: underline;
+  }
+}
+
+
+.readmore {
+  margin-top: 30px;
+  color: $orange;
+  font: 400 18px/1.5 "Muli";
+  letter-spacing: 0.3px;
+  display: block;
+
+  &:after {
+    content: "";
+    width: 25px;
+    margin-left: 50px;
+    height: 10px;
+    background-size: contain;
+    display: inline-block;
+  }
+
+  &:hover {
+    color: $black;
+    @include filter(grayscale(100%))
+  }
+}
+
+.tpl-page, #tpl-archive{
+
+  h1 {
+    font: 300 20px/1.5 "BrandonText";
+    color: $gray;
+    display: table;
+    margin: 20px 0 20px auto;
+    text-transform: lowercase;
+
+    &:before {
+      content: '/';
+    }
+  }
+}
+
+
+//Edit style Contact Form
+span.wpcf7-not-valid-tip{
+  display: none;
+}
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, div.wpcf7-mail-sent-ok{
+  background: rgba(255,255,255,0.8);
+  color: #000;
+  border: none;
+  margin: 0;
+  padding: 10px;
+  line-height: 1.2;
+  height: auto;
+}
+div.wpcf7-mail-sent-ok{
+  color: green;
+}
+
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+@-webkit-keyframes autofill {
+  to {
+    color: #fff;
+    background: transparent;
+  }
+}
+figure{
+  max-width: 100%;
+  display: block;
+  *{
+    height: auto;
+
+  }
+  &.aligncenter{
+    margin: 0 auto;
+    text-align: center;
+    //justify-content: center;
+  }
+  img{
+    max-width: 100%;
+    height: auto!important;
+    min-height: 0!important;
+    max-height: 100%!important;
+    display: block;
+    width: 100%;
+  }
+}
+#button-contact-special {
+  background: #ec1414;
+  color: #fff;
+  padding: 8px 30px 8px 30px;
+  border-radius: 6px;
+  font: 400 20px/1.5 "Muli";
+}
+#common-contact-div {
+  padding: 50px 50px;
+  background-image: url(../images/background/bg-menu-1.jpg);
+  margin-bottom: 50px;
+  .title {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 30px;
+    h2 {
+      font: 600 48px/1.1 "PlayfairDisplay";
+    }
+  }
+  .subtitle {
+    ext-align: center;
+    color: #fff;
+    font: 300 16px/1.5 "Muli";
+    padding: 0 50px 40px 50px;
+  }
+  .margin-contact-button {
+    text-align: center;
+  }
+}
+#media_video {
+  width: 100%;
+}
+#first_video_of_page {
+  width: 100%;
+}
+
+#why-choose-brandast {
+    margin: 0 0 80px 0;
+    .section__title {
+      h2 {
+        font: 700 50px/1.2 "PlayfairDisplay";
+      }
+    }
+    .margin-contact-button {
+      margin: 50px 0 30px 50px;
+    }
+  }
+
+.tab-content-landing-page {
+      overflow: hidden;
+      margin-bottom: 60px;
+
+      ul {
+        display: table;
+        margin: 25px auto;
+
+        li {
+          display: inline-block;
+          border-right: 2px solid;
+
+          &:nth-last-child(1) {
+            border-right: none;
+          }
+
+          a {
+            text-transform: uppercase;
+            font: 550 16px/1.5 "Muli";
+            padding: 0 30px;
+            color: $black;
+
+            &:hover {
+              color: #ec1414;
+            }
+
+          }
+
+        }
+
+    }
+
+  }
